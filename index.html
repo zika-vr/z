@@ -55,7 +55,7 @@
   lineMaterial,
   points,
   sphere,
-  images = ['cause_my_backyard.JPG','prevention_my_screen.JPG'];
+  images = ['cause_my_backyard.jpg','prevention_my_window_screen.jpg'];
 
   init();
 
@@ -200,17 +200,17 @@
     refresh = window.setInterval(stargaze, 30000);
 
     // creation of a big sphere geometry
-    /*sphere = new THREE.Mesh(
+    sphere = new THREE.Mesh(
 			new THREE.SphereGeometry(100, 20, 20),
 			new THREE.MeshBasicMaterial({
-				map: THREE.ImageUtils.loadTexture('./img/cause_backyard.JPG')
+				map: THREE.ImageUtils.loadTexture('./img/cause_my_backyard.jpg')
 			})
 		);
 		sphere.scale.x = -1;
 		scene.add(sphere);
     clock = new THREE.Clock();
     animate();
-    effect.render(scene, camera);*/
+    effect.render(scene, camera);
   }
 
 
